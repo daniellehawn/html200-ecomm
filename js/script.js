@@ -51,7 +51,8 @@ var products = [
 
 for (var key in products) {
   console.log(key); 
-  console.log(products[key]); 
+  console.log(products[key].name)
+  console.log(products[key].price)
+  console.log(products[key].description); 
   }
 
-console.log(products[key].name)
