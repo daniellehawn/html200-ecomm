@@ -7,13 +7,16 @@
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
   <script src="https://use.fontawesome.com/dc3783e120.js"></script>
 </head>
 
 <body>
   <header>
-    <nav>
+    <div class="icon"><i class="fa fa-snowflake-o fa-2x" aria-hidden="true"></i></div>
+    <h1>Winter Wear Warehouse</h1>
+    <nav id="flexnav">
       <ul>
         <li><a href="#">Hats</a></li>
         <li><a href="#">Gloves</a></li>
@@ -23,14 +26,12 @@
         </li>
       </ul>
     </nav>
-
-    <h1>Winter Wear Warehouse</h1>
   </header>
 
   <aside>
-    <form>
+    <form name="sortBy" onSubmit="capture();">
       <label>Filter By:
-        <select name="filter">
+        <select name="filter" class="ww-sort">
           <option value="">Choose One</option>
           <option value="price">Price</option>
           <option value="name">Name</option>

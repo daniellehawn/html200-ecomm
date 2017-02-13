@@ -1,3 +1,97 @@
+/* Body Style */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  clear: both; 
+  }
+
+section { padding: .25em .75em 4.5em; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 2em;
+  }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  color: purple;
+  }
+
+/* Start Navigation Styles */
+
+header {
+  /*display: flex; */
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  height: 5.5rem;
+  padding: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Float Header icon to the left */
+.icon { 
+  float: left;
+  padding-right: 1rem;
+}
+
+#flexnav ul {
+  display: flex;
+  width: 100%;
+  padding-top: 1.2rem;
+}
+#flexnav li {
+  flex: 1 1 100%;
+  }
+
+#flexnav li a {
+  text-decoration: none;
+  color: black;
+  }
+
+#flexnav li a:hover {
+  text-decoration: underline;
+}
+
+/* Aside Sort Styles */
+
+aside { 
+  font-family: 'Raleway', sans-serif;
+  padding: .25em .75em 1.5em; 
+}
+
+.ww-sort {
+  background-color: white;
+  height: 2rem;
+  padding: .5rem .1rem;
+  border: .1rem solid #eee;
+}
+
+input[type=submit] {
+  background-color: white;
+  border: .15rem solid black;
+  height: 2rem;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  padding: .6em .85em .5em;
+}
+
+/* Item Columns */
+.item-container {
+  display: flex;
+}
+
+/* Item Styles */
+
 .thumbnail {
     position: relative;
     padding: 0px;
