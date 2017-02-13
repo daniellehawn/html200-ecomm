@@ -92,6 +92,8 @@ input[type=submit] {
 
 /* Item Styles */
 
+.item { flex: 1; }
+
 .thumbnail {
     position: relative;
     padding: 0px;
@@ -99,5 +101,5 @@ input[type=submit] {
 }
 
 .thumbnail img {
-    width: 10%;
+    max-width: 50%;
 }
