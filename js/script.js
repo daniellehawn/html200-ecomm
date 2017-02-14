@@ -55,7 +55,7 @@ for(var i = 0; i < products.length; i++){
   console.log("Product: "+obj.name + " Description: " + obj.description + " Price: " + obj.price);
 }
 
-function capture(){
+function filterProducts(){
   console.log("Filter by: "+document.sortBy.filter.value);
   event.preventDefault();
 }

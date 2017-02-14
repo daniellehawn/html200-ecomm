@@ -1,105 +1,99 @@
 /* Body Style */
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  clear: both; 
+body {
+  font-family: 'Roboto', sans-serif;
   }
 
-section { padding: .25em .75em 4.5em; }
 
-p {
-  font-family: 'Raleway', sans-serif;
-  color: black;
-  font-size: 1em;
-}
 
 h1 {
-  font-family: 'Raleway', sans-serif;
-  color: black;
-  font-size: 2em;
+  color: rgb(61,127,207);
+  font-size: 4em;
+  width: 30%;
+  display: inline-block;
   }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
-  color: purple;
+h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: .2rem;
+  text-align: center;
   }
+
+main { 
+  display: flex; 
+  width: 100%; 
+  margin: 1rem; 
+}
+
+main section { width: 85%; }
+
 
 /* Start Navigation Styles */
 
-header {
-  /*display: flex; */
-  justify-content: center;
-  align-items: center;
-  background-color: #eee;
-  height: 5.5rem;
-  padding: 1rem;
-  font-family: 'Raleway', sans-serif;
-}
-
-/* Float Header icon to the left */
-.icon { 
-  float: left;
-  padding-right: 1rem;
-}
-
-#flexnav ul {
+nav ul {
   display: flex;
-  width: 100%;
-  padding-top: 1.2rem;
+  justify-content: space-around;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color: rgb(61,127,207);
+  font-weight: bold;
 }
-#flexnav li {
-  flex: 1 1 100%;
-  }
 
-#flexnav li a {
+nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   }
 
-#flexnav li a:hover {
-  text-decoration: underline;
-}
+#flexnav ul li a:hover { text-decoration: underline; }
+
 
 /* Aside Sort Styles */
 
+.logo img { height: 10rem; }
+
 aside { 
-  font-family: 'Raleway', sans-serif;
-  padding: .25em .75em 1.5em; 
+  width: 15%; 
+  margin-top: 3.5rem;
 }
 
-.ww-sort {
-  background-color: white;
-  height: 2rem;
-  padding: .5rem .1rem;
-  border: .1rem solid #eee;
+
+aside form * {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-input[type=submit] {
-  background-color: white;
-  border: .15rem solid black;
-  height: 2rem;
-  color: black;
-  font-family: 'Raleway', sans-serif;
-  padding: .6em .85em .5em;
+aside input[type="submit"] {
+  background-color: rgb(61,127,207);
+  border-radius: 5px;
+  color: white;
+  margin-top: .2rem;
 }
+
+aside form label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 
 /* Item Columns */
-.item-container {
+.item-container { 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Item Styles */
 
-.item { flex: 1; }
+.item {
+  width: 28.3333%;
+  border: .1rem solid black;
+  padding: 1rem;
+  margin: 0 0.5rem;
+} 
 
-.thumbnail {
-    position: relative;
-    padding: 0px;
-    margin-bottom: 20px;
-}
-
-.thumbnail img {
-    max-width: 50%;
+.item img {
+    width: 100%;
 }

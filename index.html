@@ -14,9 +14,7 @@
 
 <body>
   <header>
-    <div class="icon"><i class="fa fa-snowflake-o fa-2x" aria-hidden="true"></i></div>
-    <h1>Winter Wear Warehouse</h1>
-    <nav id="flexnav">
+    <nav>
       <ul>
         <li><a href="#">Hats</a></li>
         <li><a href="#">Gloves</a></li>
@@ -26,12 +24,16 @@
         </li>
       </ul>
     </nav>
+    <div class="logo">
+      <img src="images/logo-scarfcat.png" alt="Winter Wearhouse Scarf Cat">
+      <h1>Winter Wear Warehouse</h1>
+    </div>
   </header>
-
+  <main>
   <aside>
-    <form name="sortBy" onSubmit="capture();">
+    <form name="sortBy" onSubmit="filterProducts();">
       <label>Filter By:
-        <select name="filter" class="ww-sort">
+        <select name="filter">
           <option value="">Choose One</option>
           <option value="price">Price</option>
           <option value="name">Name</option>
@@ -50,15 +52,50 @@
         <div class="thumbnail">
           <img src="images/fringed-plaid.jpeg" alt="Image of black/white fringed plaid scarf">
         </div>
-        <div class="details">
+        <div class="Name">
           <h3>Fringed Plaid</h3>
+        </div>
+        <div class="Desc">
+          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+        <div class="Price">
           <p>Price: $18.99</p>
-          <p>Description: Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+        </div>
+        </div>
+      </div>
+      
+            <div class="item">
+        <div class="thumbnail">
+          <img src="images/fringed-plaid.jpeg" alt="Image of black/white fringed plaid scarf">
+        </div>
+        <div class="Name">
+          <h3>Fringed Plaid</h3>
+        </div>
+        <div class="Desc">
+          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+        <div class="Price">
+          <p>Price: $18.99</p>
+        </div>
+        </div>
+      </div>
+      
+            <div class="item">
+        <div class="thumbnail">
+          <img src="images/fringed-plaid.jpeg" alt="Image of black/white fringed plaid scarf">
+        </div>
+        <div class="Name">
+          <h3>Fringed Plaid</h3>
+        </div>
+        <div class="Desc">
+          <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
+        <div class="Price">
+          <p>Price: $18.99</p>
+        </div>
         </div>
       </div>
     </div>
   </section>
-
+  </main>
+  
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
