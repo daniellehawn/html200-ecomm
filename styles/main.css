@@ -1,8 +1,8 @@
 /* Body Style */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  }
+  font-family: 'Lato', sans-serif;
+  } 
 
 .fa-shopping-cart { color: white; }
 
@@ -51,7 +51,11 @@ nav ul li a {
 
 /* Aside Sort Styles */
 
-.logo img { height: 10rem; }
+.logo img { 
+  height: 10rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
 
 aside { 
   width: 15%; 
