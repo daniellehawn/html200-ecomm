@@ -48,25 +48,24 @@ nav ul li a {
 
 #flexnav ul li a:hover { text-decoration: underline; }
 
-
-/* Aside Sort Styles */
+.logo { margin: 1rem; }
 
 .logo img { 
   height: 10rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin: 1rem;
 }
 
+/* Aside Sort Styles */
 aside { 
   width: 15%; 
   margin-top: 3.5rem;
 }
 
-
 aside form * {
   display: block;
   width: 100%;
   margin-bottom: .5rem;
+  border-color: rgb(61,127,207);
 }
 
 aside input[type="submit"] {
@@ -83,13 +82,13 @@ aside form label {
   font-size: 1rem;
 }
 
-
 /* Item Columns */
 .item-container { 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 /* Item Styles */
@@ -97,11 +96,19 @@ aside form label {
 .item {
   width: 28.3333%;
   border: .1rem solid black;
-  padding: 0 1rem 1rem;
+  padding: 1rem 1rem .5rem 1rem;
   margin: 0 0.5rem 0.5rem 0;
-  min-width: 240px;
+  min-width: 250px;
 } 
 
 .item img {
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 25rem;
+  padding: 0.75rem;
+}
+
+.Name {
+  font-weight: bold;
+  text-align: center;
 }
