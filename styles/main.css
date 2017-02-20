@@ -66,14 +66,16 @@ aside {
 aside form * {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 aside input[type="submit"] {
   background-color: rgb(61,127,207);
+  border: 1px rgb(61,127,207);
   border-radius: 5px;
   color: white;
   margin-top: .2rem;
+  padding: .5rem;
 }
 
 aside form label {
@@ -87,6 +89,7 @@ aside form label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 0.5rem;
 }
 
 /* Item Styles */
@@ -94,10 +97,11 @@ aside form label {
 .item {
   width: 28.3333%;
   border: .1rem solid black;
-  padding: 1rem;
-  margin: 0 0.5rem;
+  padding: 0 1rem 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  min-width: 240px;
 } 
 
 .item img {
-    width: 100%;
+    max-width: 100%;
 }
