@@ -26,14 +26,17 @@
       </ul>
     </nav>
     <div class="logo">
-      <img src="images/logo-scarfcat.png" alt="Winter Wearhouse Scarf Cat">
+      <img srcset="images/logo-scarfcat.png 800w, images/logo-scarfcat-300w.png 400w"
+           sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 800px"
+           src="images/logo-scarfcat.png" 
+           alt="Winter Wearhouse Scarf Cat">
       <h1>Winter Wear Warehouse</h1>
     </div>
   </header>
   <main>
   <aside>
     <form name="sortBy" onSubmit="filterProducts();">
-      <label>Filter By:     </label>
+      <label>Filter By:</label>
         <select name="filter">
           <option value="">Choose One</option>
           <option value="price">Price</option>
@@ -51,9 +54,9 @@
       <div class="item">
         <div class="thumbnail">
           <img srcset="images/fringed-plaid.jpg 1280w, images/fringed-plaid-800w.jpg 800w, images/fringed-plaid-400w.jpg 400w" 
-          sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px" 
-          src="images/fringed-plaid-400w.jpg" 
-          alt="Image of black/white fringed plaid scarf">
+               sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px" 
+               src="images/fringed-plaid-400w.jpg" 
+               alt="Image of black/white fringed plaid scarf">
         </div>
         <div class="Name">
           <h3>Fringed Plaid</h3>
