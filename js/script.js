@@ -59,3 +59,18 @@ function filterProducts(){
   console.log("Filter by: "+document.sortBy.filter.value);
   event.preventDefault();
 }
+
+//TO DO: trigger on change of cart contents
+function sumPrices(cartArray) {
+  // for loop through array, sum value of price attributes for each object
+  var total = 0;
+  
+  for(var i= 0; i < cartArray.length; i++) {
+
+    if(cartArray[i].price){
+          total = total + cartArray[i].price;
+    }
+  }
+  //TO DO: print total as HTML to page, next to cart icon
+  console.log(total);
+}
