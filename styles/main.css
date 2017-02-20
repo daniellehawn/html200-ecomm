@@ -49,11 +49,13 @@ nav ul li a {
 
 #flexnav ul li a:hover { text-decoration: underline; }
 
-.logo { margin: 1rem; }
+.logo { margin-left: .5rem; }
 
 .logo img { 
   height: 10rem;
-  margin: 1rem;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  display: inline-block;
 }
 
 /* Aside Sort Styles */
@@ -109,4 +111,5 @@ aside form label {
 .Name {
   font-weight: bold;
   text-align: center;
+  padding-bottom: 0.5rem;
 }
