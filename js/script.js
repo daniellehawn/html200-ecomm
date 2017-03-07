@@ -63,24 +63,45 @@ for(var i = 0; i < products.length; i++){
 //}
 
 function filterProducts() {
+
   var sortMethod = document.sortBy.filter.value;
-  console.log("Filter by: "+document.sortBy.filter.value);
+  if(sortMethod == "name") {
+    sortByName();
+  }
+  
+  else if (sortMethod == "price") {
+     { 
+      sortByPrice();
+  } 
+}
   event.preventDefault();
 }
 
 //Compare Name and Sort Array
-function sortByName(a, b) {
-  if (a.name.toLowerCase() < b.name.toLowerCase())
-    return -1;
-  if (a.name.toLowerCase() > b.name.toLowerCase())
-    return 1;
-  return 0;
-  console.log(sortByName);
+//function sortByName(a,b) {
+//  if (a.name.toLowerCase() < b.name.toLowerCase())
+//    return -1;
+//  if (a.name.toLowerCase() > b.name.toLowerCase())
+//    return 1;
+//  return 0;
+//}
+
+function sortByName(){
+  products.sort(function(a,b){
+    if(a.name.toLowerCase() < b.name.toLowerCase())
+      return -1;
+    if(a.name.toLowerCase() > b.name.toLowerCase())
+      return 1;
+    return 0;
+  });
+  console.log(products);
 }
 
-//Compare Price and Sort Array
-function sortByPrice(a,b) {
-  return a.price - b.price;
+function sortByPrice() {
+  products.sort(function(a,b){
+    return a.price - b.price;
+});
+  console.log(products);
 }
 
 
