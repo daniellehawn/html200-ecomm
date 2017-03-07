@@ -1,3 +1,5 @@
+var cart = [ ];
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -55,10 +57,32 @@ for(var i = 0; i < products.length; i++){
   console.log("Product: "+obj.name + " Description: " + obj.description + " Price: " + obj.price);
 }
 
-function filterProducts(){
+//function filterProducts(){
+//  console.log("Filter by: "+document.sortBy.filter.value);
+//  event.preventDefault();
+//}
+
+function filterProducts() {
+  var sortMethod = document.sortBy.filter.value;
   console.log("Filter by: "+document.sortBy.filter.value);
   event.preventDefault();
 }
+
+//Compare Name and Sort Array
+function sortByName(a, b) {
+  if (a.name.toLowerCase() < b.name.toLowerCase())
+    return -1;
+  if (a.name.toLowerCase() > b.name.toLowerCase())
+    return 1;
+  return 0;
+  console.log(sortByName);
+}
+
+//Compare Price and Sort Array
+function sortByPrice(a,b) {
+  return a.price - b.price;
+}
+
 
 //TO DO: trigger on change of cart contents
 function sumPrices(cartArray) {
@@ -74,3 +98,21 @@ function sumPrices(cartArray) {
   //TO DO: print total as HTML to page, next to cart icon
   console.log(total);
 }
+
+function addItem(item) {
+  /*checks to see if an item is in the cart array. If not, it will add it */
+  var ProductIndex = cart.indexOf(item);
+  if (ProductIndex <= 0) {
+    cart.push(item);
+  }
+  console.log(cart);
+}
+
+function removeItem(item) {
+  var ProductIndex = cart.indexOf(item);
+  if (ProductIndex != -1) {
+    cart.splice(ProductIndex, 1);
+  }
+  console.log(cart);
+}
+

@@ -108,6 +108,7 @@ aside form label {
   border: .1rem solid black;
   padding: 1rem;
   margin: 0 0.5rem 0.5rem 0.5rem;
+  text-align: center;
 } 
 
 
@@ -124,7 +125,30 @@ aside form label {
 }
 
 .item-description {
-  margin-top: .4rem;
+  margin: .4rem;
+}
+
+.add-to-cart {
+  text-align: center;
+  margin: .25rem;
+}
+
+.add-to-cart {
+  background-color: rgb(61,127,207);
+  border: 1px rgb(61,127,207);
+  border-radius: 5px;
+  color: white;
+  margin-top: .2rem;
+  padding: .5rem;
+}
+
+.remove-from-cart {
+  background-color: rgb(61,127,207);
+  border: 1px rgb(61,127,207);
+  border-radius: 5px;
+  color: white;
+  margin-top: .2rem;
+  padding: .5rem;
 }
 
 @media screen and (max-width: 725px) {
@@ -148,5 +172,5 @@ aside form label {
     width: auto; 
   }
   
-  .item { width: 100%; }
+  .item { width: 100%; margin-right: auto; margin-left: auto; }
 }
