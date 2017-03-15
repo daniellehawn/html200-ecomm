@@ -121,12 +121,13 @@ function sumPrices(cartArray) {
 }
 
 function addItem(item) {
-  /*checks to see if an item is in the cart array. If not, it will add it */
   var ProductIndex = cart.indexOf(item);
   if (ProductIndex <= 0) {
     cart.push(item);
   }
-  console.log(cart);
+  //console.log(cart.length);
+    var total = document.getElementById("total");
+    total.innerHTML = cart.length; 
 }
 
 function removeItem(item) {
@@ -134,6 +135,22 @@ function removeItem(item) {
   if (ProductIndex != -1) {
     cart.splice(ProductIndex, 1);
   }
-  console.log(cart);
+  //console.log(cart.length);
+      var total = document.getElementById("total");
+      total.innerHTML = cart.length; 
 }
 
+//Sum up total of Cart
+//window.onload = function() 
+//
+// window.onload = function() {
+//    var sumCart = document.getElementById("total");
+//  if (cart.length >= 1) {
+//    sumCart.innerHTML = cart.length.toString(); //toString()
+//    console.log(cart.length);
+//  } else {
+//    sumCart.innerHTML = 0;
+//  }
+//  console.log(cart.length);
+//
+// }
